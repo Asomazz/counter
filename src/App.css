@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.move-button {
+  /* Base styles for the button */
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.animated {
+  animation: move 0.5s ease-in-out;
+}
+
+@keyframes move {
+  from { transform: translateX(0); }
+  to { transform: translateX(20px); }
+}
+
